@@ -1,0 +1,75 @@
+W tym przypadku odpowiednio do adresu MAC 08:00:27:53:1c:75 jest przypisany adres 192.168.100.20.
+Podejrzenie ataku byłoby gdyby ten sam IP w innym pakiecie miał inny MAC.
+
+1. Opisz krótko, czym jest atak typu spoofing. 
+Spoofing to podszywanie się pod inne urządzenie. ARP spoofing polega na wysyłaniu fałszywych komunikatów ARP w celu przekierowania ruchu przez komputer atakującego.
+
+2. Przedstaw konfigurację środowiska testowego (systemy, narzędzia, interfejsy). 
+Systemy: Kali Linux + Windows
+Narzędzie do analizy: Wireshark
+Narzędzie testowe: Ettercap
+Protokół: ARP, IPv4
+Sieć: 192.168.100.0/24
+Host testowy: 192.168.100.10
+Drugi host: 192.168.100.20
+Interfejs: Ethernet
+
+3. Opisz krok po kroku przebieg ataku ARP spoofing.  
+Najpierw sprawdziłem konfigurację sieci oraz adresy poszczególnych hostów.
+Uruchomiłem Wireshark by obserwować ARP
+Na atakującym włączyłem Ettercap by zaatakować ofiarę.
+Na Windowsie w Wireshark obserwowałem nowe pakiety ARP
+
+4. Dołącz zrzuty ekranu z Wireshark pokazujące przechwycone pakiety. 
+w tym samym folderze
+
+5. Przedstaw sposób zatrzymania ataku i zastosowane środki ochrony. 
+zatrzymać można kończąc proces generujący komunikaty ARP
+
+środki ochrony:
+statyczne wpisy ARP
+Dynamic ARP Inspection na przełącznikach
+DHCP Snooping
+monitorowanie tablic ARP
+wykrywanie zmian powiązania IP-MAC
+segmentacja sieci
+
+6. Oceń skuteczność użytych narzędzi zabezpieczających. 
+wszystko działało skutecznie tak jak powinno
+
+7. Sformułuj wnioski dotyczące zagrożeń i metod obrony.
+ARP spoofing jest zagrożeniem w sieciach lokalnych, które można wykryć, obserwując zmiany w powiązanych adresach IP i MAC, a ograniczyć za pomocą mechanizmów zabezpieczających przełączniki i szyfrowania komunikacji.
+
+
+Pytania Kontrolne:
+1. Co to jest ARP i jak działa w sieci lokalnej?
+ARP (Address Resolution Protocol) służy do zamiany adresu IP na adres MAC w sieci lokalnej. Komputer wysyła zapytanie pytające kto ma dany adres IP, a urządzenie posiadające dany IP odpowiada swoim adresem MAC.
+
+2. Jakie są skutki ataku typu spoofing? 
+przechwytywanie ruchu,
+przekierowanie danych przez komputer atakującego,
+możliwość modyfikacji komunikacji,
+utrata poufności danych,
+problemy z dostępem do sieci.
+
+3. Jakie narzędzia można wykorzystać do przeprowadzenia ataku ARP spoofing? 
+Ettercap, arpspoof, Bettercap
+
+4. Jakie mechanizmy obrony przed spoofingiem są dostępne? 
+DHCP Snooping, DAI, statyczne wpisy ARP, monitoring sieci, segmentacja sieci,
+
+5. Jakie są różnice między Ettercap a Arpspoof? 
+Ettercap ma więcej funkcji i oferuje m.in. analizę oraz przechwytywanie ruchu.
+Arpspoof jest prostszym narzędziem, którego głównym zadaniem jest wysyłanie fałszywych odpowiedzi ARP.
+
+6. Jakie informacje można uzyskać z analizy pakietów w Wireshark? 
+Można analizować m.in.
+adresy IP i MAC
+komunikaty ARP
+źródło i cel pakietów
+rodzaj protokołu
+czas transmisji
+nietypowe lub podejrzane zachowania w sieci
+
+7. Dlaczego ważne jest monitorowanie tablicy ARP?
+Ponieważ pozwala wykryć nieoczekiwane zmiany powiązań IP–MAC. Jeśli jeden adres IP zaczyna wskazywać na różne adresy MAC, może to być oznaka ARP spoofingu.
