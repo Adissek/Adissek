@@ -1,0 +1,49 @@
+Porównanie narzędzi sniffujących Wireshard, Ettercap i dsniff.
+
+Funkcje:
+Wireshark działa poprzez przechwytywanie i analize pakietów sieciowych.
+Ettercap działa poprzez sniffing i ARP spoofing.
+dsniff działa poprzez automatyczne przechwytywanie danych logowania z nieszyfrowanych protokołów.
+
+Efektywność:
+Wireshark - najbardziej efektywny w szczegółowej analizie sieci przechwytując każdy pakiet
+Ettercap - najbardziej efektywny w aktywnym przejmowaniu ruchu łącząc funkcje sniffingu z atakiem ARP spoofing, co pozwala zmusić ruch w sieci do przechodzenia przez maszynę atakującego.
+dsniff - najbardziej efektywny w pozyskiwaniu danych automatycznie skanując ruch i przechwytując pakiet z danymi logowania.
+
+Łatwość użycia:
+Wireshark - prosty do użycia z intuicyjnym interfejsem graficznym.
+Ettercap - najbardziej skomplikowany do użycia gdyż wszystko trzeba ustawić manualnie i trzeba znać topologie sieci.
+dnsniff - najprostrzy w użyciu - wystarczy jedno polecenie by przechwycać pakiety.
+
+Porównanie: 
+Narzędzie - główna funkcja - zalety - wady
+Wireshark - analiza pakietów - interfejs graficzny, filtry - manualna analiza
+Ettercap - ARP spoofing + sniffing - Automatyzacja, MITM - może wymagać konfiguracji
+dsniff - przechwytywanie danych - prosty, szybki - tylko tekstowy interfejs
+
+Podsumowanie:
+Wireshark - interfejs graficzny - wszystko robi się ręcznie - średnia trudność - przeznaczony do edukacji lub analizy
+Ettercap - interfejs graficzny i tekstowy - automatyzacja przechwytywania - wyższa trudność - do ataków sieciowych
+dsniff - interfejs tekstowy - automatyzacja przechwytywania - niska trudność - do szybkiego podglądu danych.
+
+Pytania kontrolne
+1. Czym jest sniffing i jakie zagrożenia się z nim wiążą?
+Sniffing i zagrożenia: Przechwytywanie ruchu sieciowego. Zagrożenia to kradzież haseł i poufnych danych oraz naruszenie prywatności.
+2. Jakie narzędzie zostało użyte do przechwytywania pakietów sieciowych w ćwiczeniu?
+Użyto Wireshark. Porównano do Ettercap i dsniff.
+3. Dlaczego protokół HTTP jest mniej bezpieczny niż HTTPS?
+HTTP przesyła dane w sposób jawny (niezaszyfrowany), a HTTPS je szyfruje.
+4. Jak można rozpoznać, czy strona internetowa używa HTTPS?
+Prefiks https:// w adresie URL oraz ikona kłódki w przeglądarce.
+5. Jakie dane udało się przechwycić podczas ćwiczenia?
+Jawne loginy i hasła przesyłane w ruchu HTTP.
+6. Dlaczego filtrowanie pakietów w Wiresharku jest przydatne?
+Pozwalają szybko odfiltrować nieistotny ruch i znaleźć poszukiwane pakiety.
+7. Jakie typy zapytań HTTP można filtrować w Wiresharku? Podaj przykłady.
+http.request.method == "POST" oraz http.request.method == "GET"
+8. Czy sniffing może działać w sieciach z szyfrowanym ruchem? Jeśli tak, to w jakich przypadkach?
+Może przechwycić pakiety, ale ich treść pozostanie zaszyfrowana i nieczytelna.
+9. Jakie są dobre praktyki zabezpieczania transmisji danych w sieci lokalnej?
+Używanie HTTPS/VPN, protokołu WPA3 i zabezpieczeń przed ARP spoofingiem.
+10. Czy podsłuchiwanie ruchu sieciowego jest legalne? W jakich sytuacjach może być dopuszczalne?
+Jest nielegalny bez zgody. Dopuszczalny tylko przez administratorów sieci lub za pisemną zgodą właściciela dla testów.

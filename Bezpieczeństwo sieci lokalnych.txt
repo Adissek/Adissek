@@ -1,0 +1,21 @@
+Ćwiczenie 1
+Ping wykonano bez problemu z krótkim 12 ms opóźnieniem.
+1. 213.192.73.194
+2. Wysłano 4 i odebrano 4 pakiety. Utracono 0 pakietów.
+3. Ilość czasu który pakiet żyje wyrażony w ilości skoków.
+4. Tak, opóźnienie pozostawało bez zmian i nie utracono żadnych pakietów.
+
+Ćwiczenie 2
+1. Nie zadziałało pierwsze polecenie ponieważ pakiety były za duże.
+2. Przez serwer akceptowane były pakiety rozmiaru do 1472 bajtów, a pakiety większe takie jak 65500 bajtów były za duże.
+3. Czasy odpowiedzi są w zakresie 12-13ms.
+
+Ćwiczenie 3
+1. Oznacza nie fragmentowanie pakietów.
+2. Żeby mogły normalnie jako parę małych pakietów a nie jeden duży przejść przez serwer nie przeciążając go.
+3. 1500 bajtów.
+
+Ćwiczenie 4
+1. Szkolny serwer "hosting.zsl.gda.pl"
+2. 10.99.99.250
+3. Aliases: www.oke.gda.pl.zsl.gda.pl

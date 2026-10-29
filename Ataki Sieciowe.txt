@@ -1,0 +1,7 @@
+Ćwiczenie 5
+1. Wysyła ogrom pakietów SYN do serwera, zmuszając serwer do odpowiadania na każdym z nich.
+2. Zabiera to zasoby normalnie użyte do potencjalnego połączenia.
+3. Użycie SYN cookies, filtrowanie pakietów ograniczając możliwą ilość pakietów wysłaną do serwera, monitorowanie ruchu sieciowego w celu ewentualnego zablokowania podejrzanego połączenia.
+
+Ćwiczenie 6
+1. 
