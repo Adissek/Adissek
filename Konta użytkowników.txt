@@ -1,0 +1,14 @@
+Konta użytkowników
+
+Zrozumiałem, jak tworzyć konto użytkownika w domenie za pomocą konsoli Użytkownicy i komputery usługi Active Directory i poprawnie wprowadzić odpowiednie dane. 
+Dodawanie kontaktów również jest kluczowe pozwalając na skuteczne zarządzanie informacjami o użytkownikach.
+
+Zrozumiałem, jak używać wiersza polecenia do dodawania kont użytkowników w domenie. Komenda dsadd user umożliwia skonfigurowanie parametrów konta.
+Dodanie kontaktu za pomocą polecenia dsadd contact jest istotne dla pełnego zarządzania danymi. 
+
+Zrozumiałem, jak konfigurować różne parametry konta, takie jak hasło, czy opcja 
+wymuszania jego zmiany przy pierwszym logowaniu.
+
+Zrozumiałem, jak wykorzystać cmd do sprawdzania parametrów konta użytkownika i grup lokalnych co pozwala na skuteczne monitorowanie konfiguracji. 
+
+Zrozumiałem, jak używając polecenia net localgroup dodawać użytkownika do grupy lokalnej na stacji roboczej. To istotne dla zarządzania uprawnieniami w lokalnym środowisku.

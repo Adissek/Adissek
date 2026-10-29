@@ -1,0 +1,19 @@
+Instalacja usługi AD:
+1. Wybranie w pulpicie nawigacyjnym opcji "Dodaj role i funkcje"
+2. Wybranie odpowiedniego serwera
+3. Wybranie usług domenowych Active Directory
+4. Wybranie opcji "Dodaj funkcje" i przechodzenie dalej.
+5. Wybranie automatycznego uruchomienia ponownie jeśli to potrzebne.
+6. Zakończenie instalacji.
+
+Konfiguracja usługi AD:
+1. Wybranie promowanie serwera do poziomu kontrolera domeny
+2. Wybranie opcji dodania nowego lasu i podanie nazwy domeny głównej.
+3. Utworzenie hasła do przywracania usług katalogowych.
+4. Ustawienie odpowiedniego NetBIOS-u i ścieżek domyślnych.
+5. Instalacja.
+
+Adres IPv4 192.167.0.20
+Maska podsieci IPv4 255.255.255.0
+Brama domyślna IPv4 192.167.0.1
+Serwer DNS IPv4 192.167.0.1

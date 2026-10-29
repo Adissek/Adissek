@@ -1,0 +1,28 @@
+Instalacja:
+1. Wybranie języka polskiego.
+2."Zainstaluj teraz"
+3."Nie mam klucza produktu"
+4. "Windows Server 2019 Standard (środowisko pulpitu)" > dalej
+5. Akceptuje EULA
+6. Instalacja Niestandardowa
+7. Stworzenie 3 partycji podstawowych - 500GB, 256GB, 128GB i potem usunięcie ich.
+8. Jeżeli wskażesz „Nieprzydzielone miejsce” to wybierzesz domyślny schemat 
+partycjonowania zapisany w instalatorze Windows.
+9. Stworzenie hasła administratora
+10. Wymuszenie aktualizacji - Wejście w "aktualizacja i zabezpieczenia' w ustawieniach systemu o wybranie szukania aktualizacji.
+11. WSUS - usługa pozwalająca administratorom dystrybucję aktualizacji oraz poprawek dotyczących produktów firmy Microsoft przeznaczonych dla komputerów w danej organizacji. WSUS 
+pobiera aktualizacje ze strony Microsoft Update, a następnie wysyła je na poszczególne komputery poprzez sieć. Dawniej WSUS nazywał się Software Update Services (SUS).
+
+Wnioski:
+Dowiedziałem się że nośnik z instalatorem systemu Windows Server 2019 można zdobyć na różne sposoby takie jak zakup wersji z nośnikiem lub pobranie pliku .iso systemu.
+Dowiedziałem się że aby zainstalować system przed uruchomieniem urządzenia należy wsadzić nośnik z instalatorem
+Dowiedziałem się jakie są poszczególne etapy instalacji serwera.
+Dowiedziałem się jak odpowiednio wybrać dysk do instalacji systemu oraz tworzenia partycji na których będzie zainstalowany system.
+Dowiedziałem się że trzeba zaakceptować EULA by kontynuować.
+Dowiedziałem się jak zalogować się do zainstalowanego systemu.
+Dowiedziałem się o możliwości wymuszenia aktualizacji systemu oraz poznałem rolę WSUS.
+
+Podsumowanie:
+Na tej lekcji dowiedziałem się poprawnej instalacji serwera Windows.
+
+

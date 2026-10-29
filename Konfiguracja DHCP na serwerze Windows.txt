@@ -1,0 +1,57 @@
+|| Windows Server
+
+Parametry zakresu DHCP:
+Nazwa: szkola.x
+Początkowy adres IP: 192.167.0.20
+Końcowy adres IP: 192.167.0.200
+Maska: 255.255.255.0
+Czas dzierżawy: 6 godzin
+
+Parametry DNS:
+Dynamiczne aktualizacje rekordów DNS na żądanie klientów
+Odrzucanie rekordów A i PTR po usunięciu dzierżawy
+
+Parametry zaawansowane DHCP:
+Możliwość przydzielania adresów klientom DHCP, BOOTP albo obu.
+Możliwość konfiguracji opóźnienia w dystrybucji adresów.
+
+Różnice między DHCP a BOOTP:
+DHCP będący nowszym standardem ma dynamiczne pule adresów pozwalające nadawać je również nowym urządzeniom w sieci, gdy w statycznym BOOTP trzeba manualnie te adresy konfigurować.
+
+|| Windows Client
+
+Parametry IPv4:
+DHCP włączone - Tak
+Adres IPv4 - 192.167.0.20
+Maska podsieci IPv4 - 255.255.255.0
+Brama domyślna IPv4 - 192.167.0.1 
+Serwer DHCP IPv4 - 192.167.0.1
+Serwer DNS IPv4 - 192.167.0.1
+
+Adres fizyczny: 00-15-5D-38-01-28
+
+Parametry od DHCP:
+Sufiks DNS - rol00.edu.pl
+Adres fizyczny - 00-15-5D-38-01-28
+DHCP włączone - Tak
+Adres IPv4 - 192.167.0.21
+Maska podsieci IPv4 - 255.255.255.0
+Brama domyślna IPv4 - 192.167.0.1
+Serwer DHCP IPv4 - 192.167.0.1
+Serwer DNS IPv4 - 192.167.0.1
+Adres IPv6 połączenia - fe80::4d94:238a:ba 19:b857%7
+
+|| Cel DHCP
+Automatyczne przypisywanie ustawień sieciowych, takich jak na przykład adres IP, maska, brama domyślna, serwer DNS dla klientów w sieci. 
+
+|| Wnioski
+Rola DHCP - Ułatwia zarządzanie adresami IP, szczególnie w dużych sieciach.
+Procedura instalacji - Serwer DHCP można zainstalować przez Menedżera serwera i Kreator dodawania ról
+Zakres DHCP - Określa pulę adresów IP oraz ustawienia, takie jak maska, brama i DNS.
+Rezerwacje DHCP - Pozwalają przypisać stały adres IP do urządzenia na podstawie adresu MAC.
+Konfiguracja klienta DHCP - Klient automatycznie pobiera ustawienia sieciowe z serwera.
+Podłączenie do domeny - Poprawna konfiguracja sieci umożliwia dołączenie komputera do domeny.
+Sprawdzenie na serwerze - Administrator może sprawdzić przydzielone adresy i dzierżawy DHCP.
+Wnioski ogólne - DHCP usprawnia zarządzanie adresacją i organizację sieci.
+Długość dzierżawy - Odpowiedni czas dzierżawy pomaga efektywnie wykorzystywać dostępne adresy IP.
+

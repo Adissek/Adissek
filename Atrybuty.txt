@@ -1,0 +1,76 @@
+Atrybuty
+
+cw1
+Dodałem użytwkownika poleceniami z załączonego pliku ISO
+Zmieniłem atrybuty użytkownika podstawowymi funkcjami AD
+
+cw2
+c - kraj
+cn - common name
+co - pełna nazwa kraju
+countryCode - kod kraju
+description - opis
+displayName - wyświetlana nazwa
+distinguishedName - unikalna nazwa
+givenName - imie
+homePhone - numer telefonu domowego
+info - informacje/notatki
+ipPhone - adres telefonu IP
+l - lokacja
+lastLogoff - ostatnie wylogowanie
+LastLogon - ostatnie zalogowanie
+logonCount - ilość zalogowań
+mail - adres e-mail
+manager - zarządca użytkownika
+mobile - numer telefonu komórkowego
+physicalDeliveryOffice - adres biura
+postalCode - kod pocztowy
+postOfficeBox - numer skrzynki pocztowej
+primaryGroupID - numer grupy podstawowej
+profilePath - ścieżka profilu
+sn - nazwisko
+st - województwo
+streetAddress - adres uliczny
+telphoneNumber - numer telefonu
+sAMAccountName - login dla starszych systemów
+title - tytuł
+userPrincipalName - login w formacie e-mail
+wWWHomePage - strona internetowa
+
+cw3
+zmieniono:
+initials - inicjały
+homeDirectory - ścieżka folderu domowego
+homeDrive - litera dysku do folderu domowego
+facismileTelephoneNumber - numer FAX
+
+cw4
+mandatory - obowiązkowe - użytkownik musi je mieć
+optional - opcjonalne - użytkownik może ale nie musi ich mieć
+system-only - tylko systemowe - atrybuty tworzone przez system
+
+cw5
+AD:
+Stworzyłem JO Atrybuty naciskając ppm na nazwę serwera i dając nowy > jednostka organizacyjna
+Stworzyłem konto atryb1 i grupę gatryb naciskając ppm na serwer i dając nowy > użytkownik a potem nowy > grupa
+Stworzyłem JO1 naciskając ppm na JO Atrybuty i dając nowy > jednostka organizacyjna
+Stworzyłem konta atryb1jo1 i grupę gatryb1jo1 naciskając ppm na JO1 i dając nowy > użytkownik a potem nowy > grupa
+
+ADSI Edit:
+Połączyłem się z serwerem dając podstawowe opcje w Connect to
+Nadałem grupie Administrators wszystkie uprawnienia dotyczące obiektu atryb1jo1
+Zmieniłem nazwę i givenName atryb1jo1 na AlaAtrybut i sprawdziłem w AD
+Zmieniłem nazwę i sAMAccountName atrybjo1 na Atrybutgrupa
+Stworzyłem użytkownika naciskając ppm na OU=Atrybuty i New>Object i wybrałem obiekt klasy user
+
+
+cw6
+Zaznaczyłem atryb1 i DominikAtrybucki i ppm nacisnąłem na jednego z nich > Właściwości.
+Każdemu ustawiłem parametry takie jak podane w treści zadania.
+Powtórzyłem ustawianie parametrów dla AlaAtrybut
+Sprawdziłem w AD i ADSI
+
+
+cw7
+prawym przyciskiem na użytkownika i resetuj hasło
+ 

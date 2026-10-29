@@ -1,0 +1,13 @@
+|| Serwer Windows:
+
+Instalacja DNS:
+1. Zalogowanie się jako Administrator. 
+2. W konsoli Menedżera serwera wybranie Dodaj role i funkcje. 
+3. Na stronie Przed rozpoczęciem Kreatora dodawania ról i funkcji naciśnięcie Dalej. 
+4. Na stronie Wybierz typ instalacji naciśnięcie Dalej. 
+5. Na stronie Wybierz serwer docelowy wybranie ROL, i naciśnięcie Dalej. 
+6. Na stronie Wybieranie ról serwera zaznaczenie pola Serwer DNS. 
+7. W oknie dialogowym Kreator dodawania ról i funkcji naciśnięcie Dodaj funkcje.  
+8. Na stronie Wybieranie funkcji naciśnięcie Dalej. 
+9. Na stronie Serwer DNS naciśnięcie Dalej. 
+10. Na stronie Potwierdzenie opcji instalacji naciśnięcie Instaluj. 
